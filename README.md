@@ -16,6 +16,16 @@
    <img src="https://user-images.githubusercontent.com/64560823/212745252-a22d645c-6908-418c-806d-7df9b11e8d09.png">
 </p>
 
+
+<p align = "center">
+   <img src="https://user-images.githubusercontent.com/64560823/212745252-a22d645c-6908-418c-806d-7df9b11e8d09.png">
+</p>
+
+
+<p align = "center">
+   <img src="https://user-images.githubusercontent.com/64560823/212745252-a22d645c-6908-418c-806d-7df9b11e8d09.png">
+</p>
+
 <div align="center">
     Translate for
     <a href="./github/readme_pt-br.md">PT-BR</a>
@@ -157,4 +167,5 @@
     Made by 👨🏾‍💻
     <a href="https://github.com/VictorPereiira">VictorPereira</a>
 </p>
+
 
