@@ -1,4 +1,4 @@
-<h1 align = "center">GitNinja</h1>
+<h1 align = "center">DockerNinja</h1>
 
 <div align="center">  
    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/victorpereiira/DockerNinja">
@@ -22,7 +22,7 @@
 
 
 ## About
-🐱‍👤DockerNinja - Our GitVerse discoverys.
+🐱‍👤DockerNinja - Our DockerVerse discoverys.
 
 
 ## Project Targets
