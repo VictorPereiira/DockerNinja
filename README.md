@@ -29,7 +29,11 @@
 
 ### Docker Study
 
-1. Content here...
+1. Docker File and Docker Images.
+2. Docker Container and  Docker Network
+3. Docker Volume.
+4. Docker arguments and env.
+5. Docker Compose.
 
 ### DockerNinja Github Repository
 
@@ -44,13 +48,98 @@
 
 ### What its?
 
-1. Content here...
-   
+1. Content here…
 
 ### How to do
 
-1. Content here...
+1. How to create a dockerfile.
+2. How to work with docker images.
+3. How to work with docker containers.
+4. How to work with docker network.
+5. How to work with docker volume.
+6. How to work with docker arguments and env.
+7. How to work with docker compose.
 
+- How to create a dockerfile.
+    
+    ```docker
+    FROM <image>
+    COPY <currenty_paht/file> <dentination>
+    EXPOSE <port>
+    CMD ["<service>", "<action>"]
+    ```
+    
+
+- How to work with docker images.
+    
+    ```markdown
+    docker build <context>                         -> Create a image from dockerFile.
+    docker docker images                           -> List images.
+    docker inspect <image_id>                      -> Display infomation.
+    docker history <image_id>                      -> Display history.
+    ...                                            -> Update atributes.
+    docker rmi (<image_id> || <image_repository>)  -> Remove.
+    docker image prune                             -> Remove unused images.
+    
+    docker pull   -> Pull an image from a registry.
+    docker push   -> Push an image to a registry.
+    ```
+    
+
+- How to work with docker containers.
+    
+    ```markdown
+    docker run -d --name <container_name> -p <port> <image_id>  -> Create a container
+    
+    docker ps -a                   -> List containers.
+    docker inpect <container_id>   -> Display information.
+    docker logs <container_id>     -> Display logs.
+    docker diff <container_id>     -> Inspect changes.
+    docker stats <container_id>    -> Display statistics.
+    docker top  <container_id>     -> Display process.
+    docker update <container_id>   -> ...
+    docker rename <new_name>       -> Rename.
+    docker rm <container_id>       -> Remove.
+    docker container prune         -> Remove unused containers.
+    docker kill                    -> Kill running containers.
+    
+    docker start <container_id>     -> Start.
+    docker restart <container_id>   -> Restart.
+    docker pause <container_id>     -> Pause.
+    docker unpase <container_id>    -> Unpause.
+    docker stop <container_id>      -> Stop.
+    
+    docker exec -it <container_id> bash || sh   -> Access a container.
+    docker attach                               -> ...
+    docker commit <container_id>                -> New image container's changes.
+    docker port <empty> ||<container_id>        -> Mapping ports.
+    ```
+    
+
+- How to work with docker network.
+    
+    ```markdown
+    content here...
+    ```
+    
+- How to work with docker volume.
+    
+    ```markdown
+    content here...
+    ```
+    
+- How to work with docker arguments and env.
+    
+    ```markdown
+    content here...
+    ```
+    
+- How to work with docker compose.
+    
+    ```markdown
+    content here...
+    ```
+    
 
 ### Notes
 
