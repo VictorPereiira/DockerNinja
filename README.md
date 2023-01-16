@@ -12,7 +12,10 @@
     <a href="#how-to-contribute">How to contribute</a>   
 </p>
 
-![docker-explan](https://user-images.githubusercontent.com/64560823/212745252-a22d645c-6908-418c-806d-7df9b11e8d09.png)
+<p align = "center">
+   <img src="https://user-images.githubusercontent.com/64560823/212745252-a22d645c-6908-418c-806d-7df9b11e8d09.png">
+</p>
+
 
 <!-- <p align = "center"><img height = '400' src = "https://user-images.githubusercontent.com/64560823/127571876-967811e4-8686-45b2-8140-f35f76dbc58e.gif")
 ><p>   -->
