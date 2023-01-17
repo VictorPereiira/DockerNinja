@@ -135,7 +135,14 @@
 - How to work with docker volume.
     
     ```markdown
-    content here...
+    docker volume create <volume_name>   -> Create.
+    
+    docker container run -d --name <name> -v <volume_name>:<target> <image>
+    
+    docker volume ls            -> List Networks.
+    docker inpect <volume_name>   -> Display information.
+    docker rm <volume_name>       -> Remove.
+    docker volume prune         -> Remove unused networks.
     ```
     
 - How to work with docker arguments and env.
