@@ -120,7 +120,16 @@
 - How to work with docker network.
     
     ```markdown
-    content here...
+    docker network create  -> Create.
+    
+    docker newtowk ls            -> List Networks.
+    docker inpect <network_id>   -> Display information.
+    docker rm <network_id>       -> Remove.
+    docker network prune         -> Remove unused networks.
+    
+    docker run -d  -it --name <container_name> -p <port> --network <network> <image> <cmd>
+    
+    docker network (<connect> || <disconect>) <network_id> <conatiner_id> -> Connect or Disoconect.
     ```
     
 - How to work with docker volume.
