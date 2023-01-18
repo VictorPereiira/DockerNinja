@@ -30,16 +30,22 @@
 
 ### Docker Study
 
+1. To learnig how to work with Docker CLI.
+2. To learning how to create a DockerFile.
+3. To learning how to work with Docker Compose.
+
+**********************How to use:**********************
+
 1. Docker File and Docker Images.
 2. Docker Container and  Docker Network
 3. Docker Volume.
 4. Docker arguments and env.
-5. Docker Compose.
 
 ### DockerNinja Github Repository
 
 1. Take notes of docker study.
 2. Create Docker Cheatsheet.
+3. Create Docker Challenges.
 
 ### DockerTools
 
@@ -49,7 +55,11 @@
 
 ### What its?
 
-1. Content here…
+1. In the Docker File
+    1. What is the difference between `ADD` and  `COPY` ?
+    2. What is the difference between `ENV` and  `ARG` ?
+    3. What is the difference between  `RUN` , `CMD`and  `ENTRYPOINT` ?
+2. How to work Volume Bind Mounts ?
 
 ### How to do
 
@@ -65,7 +75,13 @@
     
     ```docker
     FROM <image>
-    COPY <currenty_paht/file> <dentination>
+    LABEL <metadada>
+    
+    WORKDIR <path>
+    ENV <key> <value>
+    ARG <key> <value>
+    
+    COPY || ADD <currenty_paht/file> <dentination>
     EXPOSE <port>
     CMD ["<service>", "<action>"]
     ```
@@ -139,16 +155,19 @@
     
     docker container run -d --name <name> -v <volume_name>:<target> <image>
     
-    docker volume ls            -> List Networks.
+    docker volume ls              -> List Networks.
     docker inpect <volume_name>   -> Display information.
     docker rm <volume_name>       -> Remove.
-    docker volume prune         -> Remove unused networks.
+    docker volume prune           -> Remove unused networks.
+    
+    /var/lib/docker/volumes/               -> Linux Storage location.
+    c:\ProgramData\Docker\windowsfilter\   -> Windows Storage location.
     ```
     
 - How to work with docker arguments and env.
     
     ```markdown
-    content here...
+    --build-arg <var_name>=<value>   -> Build-Time Variable.
     ```
     
 - How to work with docker compose.
@@ -159,6 +178,12 @@
     
 
 ### Notes
+
+`ONBUILD`
+
+`HEALTHCHECK`
+
+`SHELL`
 
 ## How to contribute
 - Make a fork;
