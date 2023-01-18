@@ -30,16 +30,13 @@
 
 ### Docker Study
 
-1. To learnig how to work with Docker CLI.
-2. To learning how to create a DockerFile.
+1. To learning how to create a DockerFile.
+    1. Docker Image
+2. To learnig how to work with Docker CLI.
+    1. Docker Conatiner.
+    2. Docker Network.
+    3. Docker Volume.
 3. To learning how to work with Docker Compose.
-
-**********************How to use:**********************
-
-1. Docker File and Docker Images.
-2. Docker Container and  Docker Network
-3. Docker Volume.
-4. Docker arguments and env.
 
 ### DockerNinja Github Repository
 
@@ -69,7 +66,8 @@
 4. How to work with docker network.
 5. How to work with docker volume.
 6. How to work with docker arguments and env.
-7. How to work with docker compose.
+7. How to work with docker users.
+8. How to work with docker compose.
 
 - How to create a dockerfile.
     
@@ -79,7 +77,10 @@
     
     WORKDIR <path>
     ENV <key> <value>
-    ARG <key> <value>
+    ARG <key>=<value>
+    
+    RUN useradd -ms /bin/bash <user_name>
+    USER <user_name>
     
     COPY || ADD <currenty_paht/file> <dentination>
     EXPOSE <port>
@@ -109,22 +110,23 @@
     docker run -d --name <container_name> -p <port> <image_id>  -> Create a container
     
     docker ps -a                   -> List containers.
+    docker update <container_id>   -> ...
+    docker rename <new_name>       -> Rename.
+    docker rm <container_id>       -> Remove.
+    docker container prune         -> Remove unused containers.
+    
     docker inpect <container_id>   -> Display information.
     docker logs <container_id>     -> Display logs.
     docker diff <container_id>     -> Inspect changes.
     docker stats <container_id>    -> Display statistics.
     docker top  <container_id>     -> Display process.
-    docker update <container_id>   -> ...
-    docker rename <new_name>       -> Rename.
-    docker rm <container_id>       -> Remove.
-    docker container prune         -> Remove unused containers.
-    docker kill                    -> Kill running containers.
     
     docker start <container_id>     -> Start.
     docker restart <container_id>   -> Restart.
     docker pause <container_id>     -> Pause.
     docker unpase <container_id>    -> Unpause.
     docker stop <container_id>      -> Stop.
+    docker kill                    -> Kill running containers.
     
     docker exec -it <container_id> bash || sh   -> Access a container.
     docker attach                               -> ...
@@ -167,13 +169,46 @@
 - How to work with docker arguments and env.
     
     ```markdown
-    --build-arg <var_name>=<value>   -> Build-Time Variable.
+    --build-arg <key>=<value>   -> Build-Time Variable.
+    --env <key>=<value>         -> Build-Time Enviroment Variable.
     ```
     
-- How to work with docker compose.
+- How to work with docker users.
     
     ```markdown
     content here...
+    ```
+    
+
+- How to work with docker compose.
+    
+    ```markdown
+    docker-compose --version   -> Get docker compose version.
+    
+    docker-compose build      -> Build Services.
+    docker-compose up -d      -> Create and Start containers.
+    docker-compose create     -> Create containers for a service.
+    docker-compose ls         -> List services containers.
+    docker-compse ps          -> ...
+    docker-compose images     -> List images used by the created containers.
+    docker-compose rm         -> Remove unused service containers.
+    
+    docker-compose events   -> Real Time events.
+    docker-compose top      -> Display the running processes
+    docker-compose logs     -> Display logs.
+    
+    docker-compose start     -> Start.
+    docker-compose stop      -> Stop.
+    docker-compose restart   -> Restart.
+    docker-compose pause     -> Pause.
+    docker-compose unpause   -> Unpase.
+    docker-compose kill      -> Kill
+    docker-compose down      -> Stop and remove containers, networks.
+    
+    docker-compose exec
+    docker-compose port
+    docker-compose pull
+    docker-compose push
     ```
     
 
