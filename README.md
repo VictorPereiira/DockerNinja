@@ -23,7 +23,7 @@
 
 
 ## About
-🐱‍👤DockerNinja - Our DockerVerse discoverys.
+🐱‍👤DockerNinja - Our DockerVerse discoverys. from [StudyVerse](https://github.com/VictorPereiira/StudyVerse)
 
 
 ## Project Targets
@@ -32,8 +32,8 @@
 
 1. To learning how to create a DockerFile.
     1. Docker Image
-2. To learnig how to work with Docker CLI.
-    1. Docker Conatiner.
+2. To learning how to work with Docker CLI.
+    1. Docker Container.
     2. Docker Network.
     3. Docker Volume.
 3. To learning how to work with Docker Compose.
@@ -48,6 +48,15 @@
 
 1. 
 
+## The Ninja Mode
+```markdown
+$Group1 = <image> || <container> ||  <network>
+
+// Combo
+docker inspect <image_id> ||  <container_id>         -> Display infomation.
+docker <$Group1>  prune                              -> Remove unused elements.
+```
+
 ## Content
 
 ### What its?
@@ -56,7 +65,16 @@
     1. What is the difference between `ADD` and  `COPY` ?
     2. What is the difference between `ENV` and  `ARG` ?
     3. What is the difference between  `RUN` , `CMD`and  `ENTRYPOINT` ?
-2. How to work Volume Bind Mounts ?
+    4. How to work Volume Bind Mounts ?
+
+- To do
+    - [ ]  Push a image to Docker Hub
+    - [ ]  Push a image to AWS ECS
+    - [ ]  Search what is `docker attach`
+    - [ ]  Search how to update `docker conatiner`
+    - [ ]  Seach hw to work with a `docker user`
+    - [ ]  Complete docker compose study
+    - [ ]  Search info notes
 
 ### How to do
 
